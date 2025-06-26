@@ -21,12 +21,12 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   padding-top: 5px;
   padding-bottom: 10px;
-  padding-left: 20px;
+  padding-left: 15px;
   display: flex;
 }
 #en-tete h1 {
   color: rgb(5, 0, 0);
-  padding-right: 600px;
+  padding-right: 500px;
   padding-top: 18px;
 }
 #en-tete img {
@@ -115,7 +115,7 @@ input[type="submit"]{
   background-color:rgb(230, 229, 229);
   border: 1px solid #ccc; /* Bordure ajoutée */
 }
-footer {
+.sandi {
   text-align: center;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 20px;
@@ -127,9 +127,17 @@ footer {
   font-family: 'Times New Roman', Times, serif;
   font-size: 15px;
 }
-.Rando {
-  box-shadow: #000000;
-}
+
 .yuma {
   text-align: center;
+  font-size:30px;
+  background-color: #333;
+  border: 20px;
+  border-radius: 5px;
+  box-shadow: #ccc;
+}
+footer {
+  text-align: center;
+  background-color: #555;
+  font-size: 15px;
 }
