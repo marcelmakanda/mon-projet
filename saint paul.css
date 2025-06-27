@@ -7,8 +7,20 @@
 #lien {
   text-align: left;
   display: flex;
-  padding-top: 50px;
-  font-size: 20px;
+  padding-top: 30px;
+  font-size: 15px;
+  gap: 20px;
+  list-style: none;
+}
+#lien a {
+  text-decoration: none;
+  color: black;
+  padding: 8px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+#lien a:hover {
+  background:yellow;
 }
 body {
     font-family: Arial, sans-serif;
@@ -17,7 +29,7 @@ body {
   }
 
 #en-tete {
-  background-color: blue;
+  background-color: rgb(0, 91, 177);
   font-family: Arial, Helvetica, sans-serif;
   padding-top: 5px;
   padding-bottom: 10px;
@@ -29,9 +41,7 @@ body {
   padding-right: 500px;
   padding-top: 18px;
 }
-#en-tete img {
-  border-radius: 39px;
-}
+
 
  .fond {
   background-image: url(./fond.jpg);
@@ -116,8 +126,12 @@ label {
 }
 .promotion {
   padding: 5px;
-  background-color:rgb(230, 229, 229);
-  border: 1px solid #ccc; /* Bordure ajoutée */
+  text-align: justify;
+}
+.promotion h2 {
+  text-align: center;
+  font-size: 24px;
+  color: #333;
 }
 
 .sandi {
@@ -126,6 +140,10 @@ label {
   font-size: 20px;
   color: white;
   background-color: #000000;
+}
+.sandi h3 {
+  margin: 10px;
+  padding: 10px;
 }
 .ye{
   text-align: center;
@@ -137,7 +155,7 @@ label {
   border-radius: 8px;
   box-shadow: 0 25px 30px rgba(0, 0, 0, 0.2);
   padding: 20px;
-  margin: 5px;
+  margin: 5px auto;
   width: 500px;
   }
 .kb {
@@ -145,11 +163,12 @@ label {
   border-radius: 8px;
   box-shadow: 0 10px 2px rgba(0, 0, 0, 0.2);
   padding: 20px;
-  margin: 10px;
+  margin: 5px auto;
   width: 500px;
   }
 .Nous {
   display: flex;
+
 }
 .yuma {
   text-align: center;
