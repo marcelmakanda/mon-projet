@@ -111,8 +111,8 @@ label {
   justify-content: space-between;
 }
 .actualité-ecole img {
-  height: 325px;
-  width: 335px;
+  width: 100%;
+  height: 325px
 }
 .actualité-ecole {
   width: 30%; /* Trois images par ligne */
@@ -132,8 +132,28 @@ label {
 }
 .promotion h2 {
   text-align: center;
+  background-color: #f8f8ff;
   font-size: 24px;
   color: #333;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+  padding: 12px 10px;
+  margin: 10px auto 15px auto;
+  border-radius: 8px;
+}
+.promotion p  {
+  background: #f8f8ff;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+  padding: 12px 10px;
+  margin: 10px auto 15px auto;
+  text-align: center;
+  font-size: 22px;
+  color: #333;
+  max-width: 90%;
+  transition: 0.3s;
+}
+.promotion p:hover {
+  background: #e0e0ff;
 }
 
 .sandi {
@@ -183,16 +203,82 @@ footer {
   background-color: #555;
   font-size: 15px;
 }
-@media (max-width: 700px) {
+/* Responsive général pour tout le site */
+
+/* Menu navigation */
+@media (max-width: 900px) {
   #lien {
     flex-direction: column;
+    align-items: flex-start;
+    padding-left: 10px;
+    font-size: 16px;
+  }
+  #en-tete {
+    flex-direction: column;
+    align-items: flex-start;
     padding-left: 0;
   }
+}
+
+/* Blocs actualité */
+@media (max-width: 1000px) {
   .actualité-ecole {
-    width: 100%; /* Une image par ligne sur mobile */
+    width: 48%; /* 2 blocs par ligne sur tablette */
+  }
+  .actualité-ecole img {
+    height: 180px;
+  }
+}
+
+@media (max-width: 700px) {
+  .actualité {
+    padding: 5px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .actualité-ecole {
+    width: 100%; /* 1 bloc par ligne sur mobile */
+    min-width: unset;
+    margin-bottom: 15px;
+  }
+  .actualité-ecole img {
+    height: 140px;
+  }
+}
+
+/* Formulaires et sections contact */
+@media (max-width: 700px) {
+  .i, .kb {
+    max-width: 98%;
+    padding: 10px;
   }
   .Nous {
-    flex-direction: column; /* Colonne sur mobile */
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
   }
-  
+}
+
+@media (max-width: 700px) {
+  .promotion h2 {
+    font-size: 18px;
+    padding: 10px 5px;
+    max-width: 100%;
+  }
+}
+/* Footer, titres et entête */
+@media (max-width: 700px) {
+  .yuma {
+    font-size: 22px;
+    padding: 10px 0;
+  }
+  footer {
+    font-size: 13px;
+    padding: 10px 0;
+  }
+  #en-tete h1 {
+    font-size: 20px;
+    padding-right: 10px;
+    padding-top: 10px;
+  }
 }
