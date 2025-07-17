@@ -203,7 +203,6 @@ footer {
   background-color: #555;
   font-size: 15px;
 }
-/* Responsive général pour tout le site */
 
 /* Menu navigation */
 @media (max-width: 900px) {
@@ -212,6 +211,7 @@ footer {
     align-items: flex-start;
     padding-left: 10px;
     font-size: 16px;
+    text-align: left;
   }
   #en-tete {
     flex-direction: column;
